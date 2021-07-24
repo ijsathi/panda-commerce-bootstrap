@@ -13,7 +13,7 @@
 <body>
     <!-- added header -->
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
             <div class="container">
               <a class="navbar-brand" href="#">
                 <img src="images/logo.png" alt="">
@@ -27,13 +27,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Home</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Shoes</a>
+                    <a class="nav-link" href="#shoes">Shoes</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Backpack</a>
+                    <a class="nav-link" href="#backpack">Backpack</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="#">Subscribe</a>
+                    <a class="nav-link" href="#subscribe">Subscribe</a>
                   </li>
                   
                  
@@ -140,9 +140,9 @@
 
         <!-- cards -->
 
-        <section class="container p-5 ">
+        <section class="container p-5 " id="shoes">
             <h1 class="ms-3 py-4 ">Shoes</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-3">
                 <div class="col">
                   <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                     <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
@@ -192,9 +192,9 @@
 
         <!-- 2nd card -- -->
 
-        <section class="container p-5 border-0 ">
+        <section class="container p-5 border-0 " id="backpack">
             <h1 class="ms-3 py-4">Bags</h1>
-            <div class="row row-cols-1 row-cols-md-3 g-4 px-3">
+            <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 px-3">
                 <div class="col">
                   <div class="card h-100 shadow p-3 mb-5 bg-body rounded">
                     <img src="images/bags/bag-1.png" class="card-img-top" alt="...">
@@ -239,9 +239,21 @@
            
         </section>
 
-    </main>
-    <footer>
+        <!-- Subscribe -->
 
+        <section class="container d-flex justify-content-center align-items-center rounded-3" style="background-color: #FEEAE9; height: 455px; " id="subscribe">
+            <div>
+            <h1>LET'S STAY IN TOUCH </h1>
+            <p>Get updates on sales, specials and more</p>
+            <input type="text" placeholder="write your email">
+            <br>
+            <button class="btn btn-primary">Submit</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="mt-5 text-center">
+      <p><small>©2020. Panda Commerce. All rights reserved. Sofia, Bulgaria.</small></p>
     </footer>
 
 
